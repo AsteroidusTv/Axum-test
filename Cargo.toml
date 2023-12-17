@@ -1,0 +1,19 @@
+[package]
+name = "axum-test"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.7.2"
+tokio = { version = "1.35.0", features = ["full"]}
+serde = "1.0.193"
+serde_json = "1.0.108"
+serde_derive = "1.0.193"
+tower-http = { version = "0.5.0", features = ["fs"] }
+tower-cookies = "0.10.0"
+
+[dev-dependencies]
+anyhow = "1"
+httpc-test = "0.1.1"
